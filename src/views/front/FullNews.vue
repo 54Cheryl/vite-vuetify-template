@@ -58,7 +58,7 @@
           </div>
         </div>
         <div class="pt-5 pb-4 text-center">
-          <a href="/vite-template/#/news" class="Serif-TC letter-spacing text-center btn btn-outline-custom m-auto" style="padding-left: 2rem;">消息總覽</a>
+          <a href="/vite-vuetify-template/#/news" class="Serif-TC letter-spacing text-center btn btn-outline-custom m-auto" style="padding-left: 2rem;">消息總覽</a>
         </div>
       </div>
     </div>

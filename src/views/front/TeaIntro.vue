@@ -99,7 +99,7 @@
         </div>
       </div>
       <div class="pb-5 mb-5 text-center">
-        <a href="/vite-template/#/products" class="Serif-TC letter-spacing text-center btn btn-outline-custom m-auto" style="padding-left: 2rem;">產品總覽</a>
+        <a href="/vite-vuetify-template/#/products" class="Serif-TC letter-spacing text-center btn btn-outline-custom m-auto" style="padding-left: 2rem;">產品總覽</a>
       </div>
     </div>
   </div>

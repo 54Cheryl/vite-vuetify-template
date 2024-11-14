@@ -123,7 +123,7 @@
       </div>
     </div>
     <div class="pb-4 mb-4 text-center" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine"  data-aos-offset="0">
-      <a href="/vite-template/#/news" class="Serif-TC letter-spacing text-center btn btn-outline-custom m-auto" style="padding-left: 2rem;">消息總覽</a>
+      <a href="/vite-vuetify-template/#/news" class="Serif-TC letter-spacing text-center btn btn-outline-custom m-auto" style="padding-left: 2rem;">消息總覽</a>
     </div>
   </div>
   <!-- 第四屏 -->
@@ -222,7 +222,7 @@
       </div>
     </div>
     <div class=" pb-5 mb-5 text-center" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine" data-aos-offset="0">
-      <a href="/vite-template/#/products" class="Serif-TC letter-spacing text-center btn btn-outline-custom m-auto" style="padding-left: 2rem;">產品總覽</a>
+      <a href="/vite-vuetify-template/#/products" class="Serif-TC letter-spacing text-center btn btn-outline-custom m-auto" style="padding-left: 2rem;">產品總覽</a>
     </div>
   </div>
   <FrontFooter />

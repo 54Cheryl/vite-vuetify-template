@@ -16,14 +16,14 @@ echo > .nojekyll
 # echo 'www.example.com' > CNAME
 
 git init
-git checkout -B main
+git checkout -B master
 git add -A
 git commit -m 'deploy'
 
 # if you are deploying to https://54cheryl.github.io
-# git push -f https://github.com/54Cheryl/vite-template.git main
+# git push -f https://github.com/54Cheryl/vite-vuetify-template.git main
 
-# if you are deploying to https://54cheryl.github.io/vite-template
-git push -f https://github.com/54Cheryl/vite-vuetify-template.git main:gh-pages
+# if you are deploying to https://54cheryl.github.io/vite-vuetify-template
+git push -f https://github.com/54Cheryl/vite-vuetify-template.git master:gh-pages
 
 cd -
