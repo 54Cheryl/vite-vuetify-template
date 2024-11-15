@@ -1,12 +1,8 @@
 <template>
-  <div>
-    <h1>測試用網頁</h1>
-  </div>
   <div class="d-flex align-center btn-icon-v-img">
     <v-img
       width="100%"
       height="100%"
-      alt="放大航空照片icon"
       src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
     ></v-img>
   </div>
@@ -25,16 +21,15 @@
     <template v-slot:headers="{ columns, allSelected, selectAll, someSelected }">
       <tr>
         <template v-for="column in columns" :key="column.key">
-          <th class="px-0" v-if="column.key === 'data-table-select'" :scope="column.scope">
+          <th class="px-0" v-if="column.key === 'data-table-select'">
             <v-checkbox-btn
               :indeterminate="someSelected && !allSelected"
               :model-value="allSelected"
               color="primary"
-              label=""
               @update:model-value="selectAll(!allSelected)"
             ></v-checkbox-btn>
           </th>
-          <th class="px-0" v-else :scope="column.scope">
+          <th class="px-0" v-else>
             <span class="mr-2 cursor-pointer">{{ column.title }}</span>
           </th>
         </template>

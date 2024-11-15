@@ -1,7 +1,4 @@
 <template>
-  <div>
-    <h1>測試用網頁</h1>
-  </div>
   <div class="d-flex align-center btn-icon-v-img">
     <v-img
       width="100%"
