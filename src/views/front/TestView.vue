@@ -1,4 +1,12 @@
 <template>
+  <div class="d-flex align-center btn-icon-v-img">
+    <v-img
+      width="100%"
+      height="100%"
+      alt="放大航空照片icon"
+      src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+    ></v-img>
+  </div>
   <v-data-table
     v-model:expanded="expanded"
     :headers="dessertHeaders"
@@ -7,14 +15,17 @@
     show-expand
     show-select
   >
-    <template v-slot:header="{ props: { dessertHeaders } }">
-      <thead>
-        <tr>
-          <th v-for="header in dessertHeaders" :key="header.value" :scope="header.scope">
-            {{ header.text }}
+    <template v-slot:[`header.data-table-select`]="{ allSelected, selectAll }">
+      <v-checkbox v-model="selectAll" @change="allSelected"></v-checkbox>
+    </template>
+    <template v-slot:headers="{ columns }">
+      <tr>
+        <template v-for="column in columns" :key="column.key">
+          <th :scope="column.scope">
+            <span class="mr-2 cursor-pointer">{{ column.title }}</span>
           </th>
-        </tr>
-      </thead>
+        </template>
+      </tr>
     </template>
     <template v-slot:top>
       <v-toolbar flat>
@@ -43,14 +54,15 @@ export default {
           title: 'Dessert (100g serving)',
           align: 'start',
           sortable: false,
-          key: 'name'
+          key: 'name',
+          scope: 'col'
         },
-        { title: 'Calories', key: 'calories' },
-        { title: 'Fat (g)', key: 'fat' },
-        { title: 'Carbs (g)', key: 'carbs' },
-        { title: 'Protein (g)', key: 'protein' },
-        { title: 'Iron (%)', key: 'iron' },
-        { title: '', key: 'data-table-expand' }
+        { title: 'Calories', key: 'calories', scope: 'col' },
+        { title: 'Fat (g)', key: 'fat', scope: 'col' },
+        { title: 'Carbs (g)', key: 'carbs', scope: 'col' },
+        { title: 'Protein (g)', key: 'protein', scope: 'col' },
+        { title: 'Iron (%)', key: 'iron', scope: 'col' },
+        { title: '', key: 'data-table-expand', scope: 'col' }
       ],
       desserts: [
         {
@@ -145,3 +157,18 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+
+.btn-icon-v-img{
+  width: 88px !important;
+  height: 88px !important;
+  padding: 0 !important;
+}
+@media screen and (min-width: 600px) {
+  .btn-icon-v-img{
+    width: 130px !important;
+    height: 130px !important;
+  }
+}
+</style>
