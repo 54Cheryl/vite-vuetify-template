@@ -180,7 +180,7 @@ export default {
 
 <style lang="scss" scoped>
 .v-input :deep(.v-input__prepend) {
-  margin-inline-end: 8px !important;
+  margin-inline-end: 0.5em !important;
 }
 .v-autocomplete :deep(.v-messages) {
   color: #B71C1C !important;
@@ -188,24 +188,24 @@ export default {
   font-weight: 500 !important;
 }
 .v-input :deep(.v-input__details) {
-  padding-bottom: 6px !important;
+  padding-bottom: 0.375em !important;
   min-height: auto !important;
 }
 .v-table :deep(.v-data-table-header__content > span) {
-  font-size: 16px !important;
+  font-size: 1em !important;
   font-weight: bold !important;
 }
 .v-table :deep(.v-data-table-footer) {
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
+  padding-top: 0.625em !important;
+  padding-bottom: 0.625em !important;
 }
 .v-table :deep(.mdi-chevron-down) {
-  font-size: 35px !important;
+  font-size: 2.188em !important;
   // color: #006064 !important;
   color: white !important;
 }
 .v-table :deep(.mdi-chevron-up) {
-  font-size: 35px !important;
+  font-size: 2.188em !important;
   // color: #006064 !important;
   color: white !important;
 }
@@ -219,46 +219,46 @@ export default {
   }
 }
 .v-table :deep(.v-data-table-footer__items-per-page > span) {
-  font-size: 16px !important;
+  font-size: 1em !important;
 }
 .v-table :deep(.v-data-table-footer__info) {
-  font-size: 16px !important;
+  font-size: 1em !important;
 }
 .v-table :deep(.v-data-table__tr:nth-child(2n)) {
   background-color: #F5F5F5 !important;
 }
 .v-table :deep(.v-data-table__td) {
   padding: 0 0 !important;
-  border-bottom: 1px solid #9e9e9e !important;
+  border-bottom: 0.063em solid #9e9e9e !important;
 }
 .v-table :deep(.v-data-table__td > p) {
-  padding: 8px 16px !important;
+  padding: 0.5em 1em !important;
 }
 .orderText > p {
-  padding: 2px 0 !important;
+  padding: 0.125em 0 !important;
 }
 .v-table :deep(thead) {
   background-color: rgb(237, 247, 247) !important;
 }
 .v-table :deep(.v-data-table-header__content) {
-  padding: 0 16px !important;
+  padding: 0 1em !important;
 }
 .v-table :deep(.v-table__wrapper) {
-  border-end-end-radius: 0px !important;
-  border-end-start-radius: 0px !important;
+  border-end-end-radius: 0 !important;
+  border-end-start-radius: 0 !important;
 }
 .v-table {
-  border: 1px solid #9e9e9e !important;
+  border: 0.063em solid #9e9e9e !important;
 }
 .CouponDialog :deep(.v-overlay__content) {
-  margin: 0px !important;
+  margin: 0 !important;
   width: 100vw !important;
   height: 100vh !important;
   max-width: 100% !important;
   max-height: 100% !important;
 }
 .CouponTable :deep(.v-data-table__td) {
-  font-size: 24px !important;
+  font-size: 1.500em !important;
 }
 .v-table :deep(.v-data-table__td--expanded-row){
   button {
@@ -266,92 +266,92 @@ export default {
   }
 }
 .btn-icon-v-img{
-  width: 88px !important;
-  height: 88px !important;
+  width: 5.500em !important;
+  height: 5.500em !important;
   padding: 0 !important;
 }
 @media screen and (min-width: 600px) {
   .smallup-btn-verify{
-    height: 65px !important;
+    height: 4.063em !important;
   }
   .v-input :deep(.v-label) {
-    font-size: 20px !important;
+    font-size: 1.250em !important;
   }
   .v-input :deep(.v-icon) {
-    font-size: 34px !important;
+    font-size: 2.125em !important;
   }
   .v-input :deep(.v-field__input) {
-    font-size: 35px !important;
-    padding-top: 32px !important;
-    min-height: 100.5px !important;
+    font-size: 2.188em !important;
+    padding-top: 2.000em !important;
+    min-height: 6.250em !important;
   }
   .page-select-pt :deep(.v-field__input) {
-    font-size: 35px !important;
-    padding-top: 12px !important;
+    font-size: 2.188em !important;
+    padding-top: 0.750em !important;
     min-height: auto !important;
   }
   .v-input :deep(.v-messages) {
-    font-size: 20px !important;
+    font-size: 1.250em !important;
     display: flex !important;
     height: 100% !important;
   };
   .v-input :deep(.v-input__details) {
-    padding-bottom: 25px !important;
+    padding-bottom: 1.563em !important;
   }
   .v-input :deep(.v-messages__message) {
-    line-height: 28px !important;
+    line-height: 1.750em !important;
   }
   .v-list-item :deep(.v-list-item-title) {
-    font-size: 24px !important;
+    font-size: 1.500em !important;
   }
   .smallup-reload-h{
-    height: 55px !important;
+    height: 3.438em !important;
   }
   .v-date-picker {
-    width: 500px !important;
+    width: 31.250em !important;
   }
   .v-table :deep(.v-data-table-header__content > span) {
-    font-size: 28px !important;
+    font-size: 1.750em !important;
     font-weight: bold !important;
-    padding: 10px 0;
+    padding: 0.625em 0;
   }
   .v-table :deep(.v-data-table-footer) {
-    padding-top: 15px !important;
-    padding-bottom: 15px !important;
+    padding-top: 0.938em !important;
+    padding-bottom: 0.938em !important;
   }
   .v-table :deep(.v-data-table-footer__items-per-page > span) {
-    font-size: 24px !important;
+    font-size: 1.500em !important;
   }
   .v-table :deep(.v-data-table-footer__info) {
-    font-size: 24px !important;
+    font-size: 1.500em !important;
   }
   .v-table :deep(.v-select__selection-text) {
-    font-size: 24px !important;
+    font-size: 1.500em !important;
   }
   .v-table :deep(.v-list > .v-list-item > .v-list-item__content > .v-list-item-title) {
-    font-size: 24px !important;
+    font-size: 1.500em !important;
   }
   .v-data-table-footer :deep(.v-list > .v-list-item > .v-list-item__content > .v-list-item-title) {
-    font-size: 24px !important;
+    font-size: 1.500em !important;
   }
   .orderText > p {
-    padding: 5px 0 !important;
+    padding: 0.313em 0 !important;
   }
   .v-table :deep(.mdi-chevron-down) {
-    font-size: 35px !important;
+    font-size: 2.188em !important;
   }
   .v-table :deep(.mdi-chevron-up) {
-    font-size: 35px !important;
+    font-size: 2.188em !important;
   }
   .v-table :deep(.v-btn__content) {
-    font-size: 24px !important;
+    font-size: 1.500em !important;
   }
   .CouponDialog :deep(.v-overlay__content) {
     width: auto !important;
     height: auto !important;
   }
   .v-table :deep(.v-data-table__td > p) {
-    padding: 16px !important;
+    padding: 1em !important;
   }
   .payTitle {
     font-size: 2.125rem !important;
@@ -361,26 +361,26 @@ export default {
     line-height: 2.2rem !important;
   }
   .btn-icon-v-img{
-    width: 130px !important;
-    height: 130px !important;
+    width: 8.125em !important;
+    height: 8.125em !important;
   }
 }
 @media screen and (max-width: 380px) {
   .menu-date-left :deep(.v-overlay__content) {
-    left: 7.5px !important;
+    left: 0.438em !important;
   }
   .v-table :deep(.v-data-table__td) {
-    max-width: 295px !important;
+    max-width: 18.438em !important;
   }
   .v-table :deep(.detail-width) {
-    max-width: 295px !important;
+    max-width: 18.438em !important;
   }
   .v-table :deep(.v-data-table-footer) {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+    padding-left: 0.625em !important;
+    padding-right: 0.625em !important;
   }
   .v-table :deep(.v-data-table-footer__info) {
-    padding-top: 5px !important;
+    padding-top: 0.313em !important;
   }
   .v-col-10 {
     max-width: 100% !important;
