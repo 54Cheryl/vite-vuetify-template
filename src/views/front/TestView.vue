@@ -31,6 +31,7 @@
               :model-value="allSelected"
               color="primary"
               label=""
+              title="test checkbox title"
               @update:model-value="selectAll(!allSelected)"
             ></v-checkbox-btn>
           </th>
@@ -51,6 +52,15 @@
         @update:model-value="selectAll(!allSelected)"
       ></v-checkbox-btn>
     </template> -->
+    <template v-slot:[`item.data-table-select`]="{ internalItem, isSelected, toggleSelect }">
+      <v-checkbox-btn
+        :model-value="isSelected(internalItem)"
+        color="red"
+        label=""
+        title="test checkbox title"
+        @update:model-value="toggleSelect(internalItem)"
+      ></v-checkbox-btn>
+    </template>
     <template v-slot:expanded-row="{ columns, item }">
       <tr>
         <td :colspan="columns.length">
