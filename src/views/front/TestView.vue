@@ -30,7 +30,9 @@
               :indeterminate="someSelected && !allSelected"
               :model-value="allSelected"
               color="primary"
+              role="checkbox"
               label=""
+              :checked="allSelected"
               title="test checkbox title"
               @update:model-value="selectAll(!allSelected)"
             ></v-checkbox-btn>
@@ -56,7 +58,9 @@
       <v-checkbox-btn
         :model-value="isSelected(internalItem)"
         color="red"
+        role="checkbox"
         label=""
+        :checked="isSelected(internalItem)"
         title="test checkbox title"
         @update:model-value="toggleSelect(internalItem)"
       ></v-checkbox-btn>
