@@ -53,7 +53,7 @@
         size="small"
         role="button"
         :aria-expanded="isExpanded(internalItem)"
-        label=""
+        :aria-label="isExpanded(internalItem) ? 'Collapse row' : 'Expand row'"
         @click="toggleExpand(internalItem)"
       ></v-btn>
     </template>
