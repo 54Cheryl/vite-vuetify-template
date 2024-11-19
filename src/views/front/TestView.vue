@@ -43,6 +43,20 @@
         </template>
       </tr>
     </template>
+    <template
+      v-slot:[`item.data-table-expand`]="{ internalItem, isExpanded, toggleExpand }"
+    >
+      <v-btn
+        color="white"
+        :icon="isExpanded(internalItem) ? 'mdi-chevron-up' : 'mdi-chevron-down'"
+        variant="text"
+        size="small"
+        role="button"
+        :aria-expanded="isExpanded(internalItem)"
+        label=""
+        @click="toggleExpand(internalItem)"
+      ></v-btn>
+    </template>
     <!-- <template v-slot:header="{ column }">
       <span class="mr-2 cursor-pointer">{{ column.title }}</span>
     </template>
