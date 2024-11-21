@@ -13,12 +13,17 @@ const routes = [
         path: '',
         name: 'TestView',
         component: () => import('../views/front/TestView.vue')
+      },
+      {
+        path: 'contact',
+        name: 'Contact',
+        component: () => import('../views/front/ApplicationContact.vue')
+      },
+      {
+        path: 'info',
+        name: 'Info',
+        component: () => import('../views/front/ApplicationInfo.vue')
       }
-      // {
-      //   path: '',
-      //   name: 'Home',
-      //   component: () => import('../views/front/HomeView.vue')
-      // },
       // {
       //   path: 'news',
       //   name: 'News',

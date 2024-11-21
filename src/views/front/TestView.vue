@@ -1,6 +1,17 @@
 <template>
   <div>
     <h1>測試用網頁</h1>
+    <RouterLink to="/contact" class="text-white text-decoration-none">
+      <v-btn
+        prepend-icon="mdi-arrow-left"
+        rounded="xl"
+        class="text-white font-weight-black text-h6 text-sm-h4 smallup-btn-h smallup-btn-radius"
+        color="cyan-darken-3"
+        variant="flat"
+        size="large"
+      >contact
+      </v-btn>
+    </RouterLink>
   </div>
   <div class="d-flex align-center btn-icon-v-img">
     <v-img
@@ -57,6 +68,7 @@
         @click="toggleExpand(internalItem)"
       ></v-btn>
     </template>
+    <!-- 測試沒有全選 -->
     <!-- <template v-slot:header="{ column }">
       <span class="mr-2 cursor-pointer">{{ column.title }}</span>
     </template>
@@ -398,10 +410,10 @@ export default {
     left: 0.438em !important;
   }
   .v-table :deep(.v-data-table__td) {
-    max-width: 18.438em !important;
+    max-width: 295px !important;
   }
   .v-table :deep(.detail-width) {
-    max-width: 18.438em !important;
+    max-width: 295px !important;
   }
   .v-table :deep(.v-data-table-footer) {
     padding-left: 0.625em !important;
