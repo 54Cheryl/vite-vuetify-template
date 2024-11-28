@@ -1,0 +1,17 @@
+{
+"success": true,
+"results": [
+    {
+        "category_id": 1,
+        "category_name": "\u5e73\u81fa\u64cd\u4f5c\u6eff\u610f\u5ea6\u8abf\u67e5"
+    },
+    {
+        "category_id": 2,
+        "category_name": "\u67e5\u627e\u7533\u8cfc\u4e00\u822c\u5f71\u50cf\u6eff\u610f\u5ea6\u8abf\u67e5"
+    },
+    {
+        "category_id": 3,
+        "category_name": "\u7533\u8cfc\u653e\u5927\u822a\u7a7a\u7167\u7247\u6eff\u610f\u5ea6\u8abf\u67e5"
+    }
+]
+}

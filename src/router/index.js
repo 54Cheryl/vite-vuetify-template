@@ -23,6 +23,11 @@ const routes = [
         path: 'info',
         name: 'Info',
         component: () => import('../views/front/ApplicationInfo.vue')
+      },
+      {
+        path: 'questionnaire/:orderId',
+        name: 'Questionnaire',
+        component: () => import('../views/front/QuestionnaireView.vue')
       }
       // {
       //   path: 'news',
