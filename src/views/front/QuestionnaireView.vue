@@ -209,7 +209,6 @@ export default {
       try {
         const response = await axios.get('/vite-vuetify-template/QCategory.json')
         this.qstCategory = response.data.results
-        console.log(this.qstCategory)
       } catch (error) {
         console.error('Error fetching questionnaire data:', error)
       }
@@ -224,7 +223,6 @@ export default {
       try {
         const response = await axios.get('/vite-vuetify-template/Questionnaire.json')
         this.questionList = response.data.results
-        console.log(this.questionList)
       } catch (error) {
         console.error('Error fetching questionnaire data:', error)
       }
