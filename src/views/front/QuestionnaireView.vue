@@ -2,10 +2,10 @@
   <v-container>
     <v-row justify="center">
       <v-col cols="12" sm="auto" class="pa-0">
+        <h1 class="text-h3 font-weight-bold text-center text-cyan-darken-4 m-0 mt-2">平臺服務之滿意度表</h1>
         <div class="overflow-auto flex-grow-1 d-flex flex-column">
           <v-card class="px-3 py-6 overflow-auto border-none">
             <!-- <p>Decrypted Data: {{ order_no }}</p> -->
-            <v-card-title class="text-h3 font-weight-regular text-center text-cyan-darken-4">本平臺服務之滿意度表</v-card-title>
             <!-- <p class="pb-4 text-sm-h5 font-weight-regular text-cyan-darken-4 text-center">為持續精進平臺的服務品質，請您將【使用的感受】就以下問題填寫。您對本平臺服務之滿意度，將是本機關後續的重要參考，謝謝您的協助！</p> -->
             <v-form ref="QuestionnaireForm">
               <v-card rounded="lg" class="elevation-0 mb-4" style="border: 1px solid #00838F;" v-for="(item, index) in questionList" :key="index">
@@ -346,7 +346,7 @@ p {
 }
 
 .CouponDialog :deep(.v-overlay__content) {
-  margin: 0px !important;
+  margin: 0 !important;
   width: 100vw !important;
   height: 100vh !important;
   max-width: 100% !important;
@@ -356,7 +356,7 @@ p {
   padding-left: 10px !important;
   .v-messages {
   // padding-bottom: 6px !important;
-    font-size: 14px !important;
+    font-size: 0.875em !important;
     // min-height: auto !important;
     display: flex !important;
     height: 100% !important;
@@ -374,7 +374,7 @@ p {
   }
   .v-input :deep(.v-messages) {
   // padding-bottom: 6px !important;
-    font-size: 18px !important;
+    font-size: 1.125em !important;
     // min-height: auto !important;
     display: flex !important;
     height: 100% !important;
