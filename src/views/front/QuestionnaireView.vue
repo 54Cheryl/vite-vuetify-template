@@ -207,7 +207,7 @@ export default {
     },
     async getQuestionnaireCategory () {
       try {
-        const response = await axios.get('/src/assets/QCategory.json')
+        const response = await axios.get('/QCategory.json')
         this.qstCategory = response.data.results
         console.log(this.qstCategory)
       } catch (error) {
@@ -222,7 +222,7 @@ export default {
     },
     async getQuestionnaireQST () {
       try {
-        const response = await axios.get('/src/assets/Questionnaire.json')
+        const response = await axios.get('/Questionnaire.json')
         this.questionList = response.data.results
         console.log(this.questionList)
       } catch (error) {
