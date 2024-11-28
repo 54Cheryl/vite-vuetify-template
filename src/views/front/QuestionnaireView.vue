@@ -5,8 +5,8 @@
         <div class="overflow-auto flex-grow-1 d-flex flex-column">
           <v-card class="px-3 py-6 overflow-auto border-none">
             <!-- <p>Decrypted Data: {{ order_no }}</p> -->
-            <!-- <v-card-title class="text-h5 font-weight-regular text-center text-cyan-darken-4">親愛的受訪者您好：</v-card-title>
-            <p class="pb-4 text-sm-h5 font-weight-regular text-cyan-darken-4 text-center">為持續精進平臺的服務品質，請您將【使用的感受】就以下問題填寫。您對本平臺服務之滿意度，將是本機關後續的重要參考，謝謝您的協助！</p> -->
+            <v-card-title class="text-h3 font-weight-regular text-center text-cyan-darken-4">本平臺服務之滿意度表</v-card-title>
+            <!-- <p class="pb-4 text-sm-h5 font-weight-regular text-cyan-darken-4 text-center">為持續精進平臺的服務品質，請您將【使用的感受】就以下問題填寫。您對本平臺服務之滿意度，將是本機關後續的重要參考，謝謝您的協助！</p> -->
             <v-form ref="QuestionnaireForm">
               <v-card rounded="lg" class="elevation-0 mb-4" style="border: 1px solid #00838F;" v-for="(item, index) in questionList" :key="index">
                 <div class="bg-light-green-lighten-3" style="border-bottom: 1px solid #00838F;">
@@ -207,7 +207,7 @@ export default {
     },
     async getQuestionnaireCategory () {
       try {
-        const response = await axios.get('/QCategory.json')
+        const response = await axios.get('/vite-vuetify-template/QCategory.json')
         this.qstCategory = response.data.results
         console.log(this.qstCategory)
       } catch (error) {
@@ -222,7 +222,7 @@ export default {
     },
     async getQuestionnaireQST () {
       try {
-        const response = await axios.get('/Questionnaire.json')
+        const response = await axios.get('/vite-vuetify-template/Questionnaire.json')
         this.questionList = response.data.results
         console.log(this.questionList)
       } catch (error) {
