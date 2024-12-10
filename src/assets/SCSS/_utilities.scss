@@ -260,3 +260,61 @@ input::-webkit-inner-spin-button {
 .shadow-custom{
   box-shadow: rgba(69, 35, 0, 0.12) 0px 0px 16px;  
 }
+
+.word-break-all {
+  word-break: break-all !important;
+}
+.rwd-div-img{
+  height: 200px !important;
+}
+.letter-spacing {
+  letter-spacing: 0.07em !important;
+}
+.line-height-1-7rem{
+  line-height: 1.7rem !important;
+}
+.opacity-1{
+  opacity: 1 !important;
+}
+.text-rwd-fs-18{
+  font-size: 18px !important;
+}
+@media screen and (min-width: 600px) {
+  .smallup-btn-h{
+    height: 85px !important;
+  }
+  .smallup-btn-radius{
+    border-radius: 48px !important;
+  }
+  .smallup-icon-h{
+    height: auto !important;
+    width: auto !important;
+  }
+  .rwd-div-img{
+    height: 330px !important;
+  }
+  .rwd-footer-img{
+    height: 400px !important;
+  }
+  .rwd-text-field {
+    height: auto !important;
+  }
+  .letter-spacing {
+    letter-spacing: 0.05em !important;
+  }
+  .line-height {
+    line-height: 1.5em !important;
+  }
+  .v-date-picker-month__day .v-btn {
+    --v-btn-size: 1.2rem !important;
+  }
+  .v-date-picker-month__weekday {
+    font-size: 1.2rem !important;
+  }
+  .v-date-picker-controls > button  {
+    font-size: 1.2rem !important;
+  }
+  .text-rwd-fs-18 {
+    font-size: 22px !important;
+  }
+}
