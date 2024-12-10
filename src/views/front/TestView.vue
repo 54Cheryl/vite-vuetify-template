@@ -1,7 +1,8 @@
 <template>
   <div>
     <h1>測試用網頁</h1>
-    <RouterLink to="/questionnaire/M241104001" class="text-white text-decoration-none">
+    <!-- /questionnaire/M241104001 -->
+    <RouterLink to="/testcontact" class="text-white text-decoration-none">
       <v-btn
         prepend-icon="mdi-arrow-left"
         rounded="xl"
@@ -9,7 +10,7 @@
         color="cyan-darken-3"
         variant="flat"
         size="large"
-      >questionnaire
+      >tc
       </v-btn>
     </RouterLink>
   </div>

@@ -8,7 +8,7 @@
         </div>
         <div class="flex-grow-1 d-flex justify-center align-center">
           <div class="w-sm-65">
-            <v-img width="100%" height="100%" cover alt="聯絡窗口插圖" src="/src/assets/img/9.contact.svg" />
+            <v-img width="100%" height="100%" cover alt="聯絡窗口插圖" :src="contactImg" />
           </div>
         </div>
         <div class="flex-grow-1">
@@ -40,6 +40,11 @@
 import FrontHeader from '@/components/FrontHeader.vue'
 import FrontFooter from '@/components/FrontFooter.vue'
 export default {
+  data () {
+    return {
+      contactImg: `${import.meta.env.BASE_URL}img/9.contact.svg`
+    }
+  },
   components: {
     FrontHeader,
     FrontFooter

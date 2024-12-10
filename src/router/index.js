@@ -29,11 +29,11 @@ const routes = [
         name: 'TestContact',
         component: () => import('../views/front/TestContactView.vue')
       },
-      {
-        path: 'nc',
-        name: 'nc',
-        component: () => import('../views/front/NewsViewC.vue')
-      },
+      // {
+      //   path: 'nc',
+      //   name: 'nc',
+      //   component: () => import('../views/front/NewsViewC.vue')
+      // },
       {
         path: 'questionnaire/:orderId',
         name: 'Questionnaire',
